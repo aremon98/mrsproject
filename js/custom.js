@@ -1,9 +1,7 @@
-
+$(document).ready(function () {
   $(window).on("load", function(){
     $("#preloader").fadeOut();
   });
-
-
 
 $(".navbar a, .next-section-link a, a.top-to-home").on("click", function(e) {
   if (this.hash !== " ") {
@@ -54,8 +52,6 @@ $(".popup").magnificPopup({ type: "image",
   }
 });
 
-
-
 // Typed Text
 $(".element").each(function(){
   var $this = $(this);
@@ -65,7 +61,6 @@ $(".element").each(function(){
   backDelay: 3000
   });
 });
-
 
 var swiper = new Swiper('.swiper-container', {
   loop: true,
@@ -79,16 +74,12 @@ var swiper = new Swiper('.swiper-container', {
   },
 });
 
-
-
-
-
-
-
 $('nav').on('click', 'button', function(){
   if($('nav').hasClass('active-nav')){
     $('nav').removeClass('active-nav');
   } else {
     $('nav').addClass('active-nav');
   }
+});
+
 });
